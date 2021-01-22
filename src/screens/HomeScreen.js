@@ -71,8 +71,8 @@ function HomeScreen({navigation}) {
     <View style={styles.container}>
       <WavyHeader
         customStyles={styles.svgCurve}
-        customHeight={90}
-        customTop={80}
+        customHeight={height * 0.15}
+        customTop={height * 0.12}
         customBgColor="#5000ca"
         customWavePattern="M0,64L120,101.3C240,139,480,213,720,213.3C960,213,1200,139,1320,101.3L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
       />
@@ -157,16 +157,14 @@ const styles = StyleSheet.create({
     width: Dimensions.get('window').width,
   },
   headerContainer: {
-    marginTop: 30,
-    marginHorizontal: 10,
+    height: height * 0.15,
+    justifyContent: 'flex-end',
   },
   headerText: {
-    fontSize: 30,
+    fontSize: height * 0.04,
     fontWeight: 'bold',
-    // change the color property for better output
     color: '#fff',
     textAlign: 'center',
-    marginTop: 10,
   },
 });
 export {HomeScreen};
