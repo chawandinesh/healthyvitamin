@@ -79,7 +79,13 @@ function VitaminDetailsScreen(props) {
                   alignItems: 'center',
                 }}
                 resizeMode="stretch">
-                <Text style={{fontSize: 23, fontWeight: 'bold', color: '#fff'}}>
+                <Text
+                  style={{
+                    fontSize: 23,
+                    textAlign: 'center',
+                    fontWeight: 'bold',
+                    color: '#fff',
+                  }}>
                   {e.name}
                 </Text>
               </ImageBackground>

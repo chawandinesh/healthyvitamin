@@ -93,6 +93,8 @@ function HomeScreen({navigation}) {
         <View>
           {data.map((e, idx) => (
             <TouchableOpacity
+              activeOpacity={0.5}
+              style={{marginTop: 5}}
               key={idx}
               onPress={() =>
                 navigation.navigate('VitaminDetailsScreen', {data: e})

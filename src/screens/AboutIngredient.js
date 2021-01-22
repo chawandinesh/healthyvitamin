@@ -6,6 +6,7 @@ import {
   Dimensions,
   Image,
   TouchableOpacity,
+  ScrollView,
   SafeAreaView,
 } from 'react-native';
 import WavyHeader from './WayHeader';
@@ -48,7 +49,7 @@ function AboutIngredient({navigation, route}) {
             />
           </TouchableOpacity>
         </View>
-        <View>
+        <View >
           <Text style={styles.headerText}>{data.name}</Text>
         </View>
       </View>
@@ -59,15 +60,14 @@ function AboutIngredient({navigation, route}) {
           resizeMode="cover"
         />
       </View>
-      <View
+      <ScrollView
         style={{
           marginTop: 20,
           padding: 5,
           height: height * 0.2,
-          justifyContent: 'center',
         }}>
         <Text style={{fontSize: 20, margin: 5}}>{data.about}</Text>
-      </View>
+      </ScrollView>
     </SafeAreaView>
   );
 }
